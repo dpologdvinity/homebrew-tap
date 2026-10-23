@@ -1,28 +1,28 @@
 class Yonder < Formula
   desc "Open your localhost site on your phone: your site, over yonder"
   homepage "https://github.com/dpologdvinity/yonder"
-  version "0.4.1"
+  version "0.4.2"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/dpologdvinity/yonder/releases/download/v0.4.1/yonder_0.4.1_darwin_arm64.tar.gz"
-      sha256 "be6c07d0978ae2ab235efef78baa39fbcd2fca4247e75fddb3d59b0adc2c11ec"
+      url "https://github.com/dpologdvinity/yonder/releases/download/v0.4.2/yonder_0.4.2_darwin_arm64.tar.gz"
+      sha256 "fadc6b03620dda39526f24217d94f27ddec24252bbd23a340898073faaffbfa6"
     end
     on_intel do
-      url "https://github.com/dpologdvinity/yonder/releases/download/v0.4.1/yonder_0.4.1_darwin_amd64.tar.gz"
-      sha256 "aca42001f2872526ebbcd26a2e1086a2e93e22edfbea95f589e9756f506f6a0e"
+      url "https://github.com/dpologdvinity/yonder/releases/download/v0.4.2/yonder_0.4.2_darwin_amd64.tar.gz"
+      sha256 "f37406627d795f942b0710ef7ac2a597951bb207efa31a5619dccf6de845ff62"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/dpologdvinity/yonder/releases/download/v0.4.1/yonder_0.4.1_linux_arm64.tar.gz"
-      sha256 "a23c068b837c1f893953f6af119d638f715616398b37408af71c22c8de926e84"
+      url "https://github.com/dpologdvinity/yonder/releases/download/v0.4.2/yonder_0.4.2_linux_arm64.tar.gz"
+      sha256 "4e815aea826000c656a2fc9bb7bac0250f887d1f666cc12ade883bc6f3626d88"
     end
     on_intel do
-      url "https://github.com/dpologdvinity/yonder/releases/download/v0.4.1/yonder_0.4.1_linux_amd64.tar.gz"
-      sha256 "7240624227207d91007e07c6a68075dbf524e8cd1116d03f01c4fde4e808f3cd"
+      url "https://github.com/dpologdvinity/yonder/releases/download/v0.4.2/yonder_0.4.2_linux_amd64.tar.gz"
+      sha256 "91446612078f99a7d5ef78a2afe5635ec341028c85da18843e430c3bcc6fe993"
     end
   end
 
