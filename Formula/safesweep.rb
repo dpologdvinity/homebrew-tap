@@ -2,24 +2,28 @@
 class Safesweep < Formula
   desc "Clean caches and temp files that are provably safe to delete"
   homepage "https://github.com/dpologdvinity/safesweep"
-  version "0.5.1"
+  version "0.6.0"
   license any_of: ["MIT", "Apache-2.0"]
 
   depends_on :linux
 
   on_linux do
     on_arm do
-      url "https://github.com/dpologdvinity/safesweep/releases/download/v0.5.1/safesweep-v0.5.1-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "f708a61f7f2d9e1005724c4519d441a38583f3f725f9336a7509fdd21f2b23b0"
+      url "https://github.com/dpologdvinity/safesweep/releases/download/v0.6.0/safesweep-v0.6.0-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "1b4158d1db35bae32f8bbd0d47328792a4181d3ad4d16cb9ad6314436b259745"
     end
     on_intel do
-      url "https://github.com/dpologdvinity/safesweep/releases/download/v0.5.1/safesweep-v0.5.1-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "9ff14ebf68064b1680183297ffa2a45cf0bc105bb1c03c394ce208a9e5ec67d3"
+      url "https://github.com/dpologdvinity/safesweep/releases/download/v0.6.0/safesweep-v0.6.0-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "21df1c9aea638efb8de421a056579fa8cc207f2ae5a886456ad84152eea2ac41"
     end
   end
 
   def install
     bin.install "safesweep"
+    bash_completion.install "safesweep.bash" => "safesweep"
+    zsh_completion.install "_safesweep"
+    fish_completion.install "safesweep.fish"
+    man1.install "safesweep.1"
   end
 
   test do

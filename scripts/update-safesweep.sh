@@ -40,6 +40,10 @@ class Safesweep < Formula
 
   def install
     bin.install "safesweep"
+    bash_completion.install "safesweep.bash" => "safesweep"
+    zsh_completion.install "_safesweep"
+    fish_completion.install "safesweep.fish"
+    man1.install "safesweep.1"
   end
 
   test do
