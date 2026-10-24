@@ -2,19 +2,19 @@
 class Safesweep < Formula
   desc "Clean caches and temp files that are provably safe to delete"
   homepage "https://github.com/dpologdvinity/safesweep"
-  version "0.6.1"
+  version "0.6.2"
   license any_of: ["MIT", "Apache-2.0"]
 
   depends_on :linux
 
   on_linux do
     on_arm do
-      url "https://github.com/dpologdvinity/safesweep/releases/download/v0.6.1/safesweep-v0.6.1-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "e8d4e58586f83e3600aaf26ccad841d8a3cef1a1e44fd937d568606be39d3052"
+      url "https://github.com/dpologdvinity/safesweep/releases/download/v0.6.2/safesweep-v0.6.2-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "5d5fd5db4be758334253f56e3b7e6f331a1e44b53bc61ae481d20d2b1be0961f"
     end
     on_intel do
-      url "https://github.com/dpologdvinity/safesweep/releases/download/v0.6.1/safesweep-v0.6.1-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "745048694abee1a88c19c36d7ad09e93c88994c6e371b3cc09ed276d2064959e"
+      url "https://github.com/dpologdvinity/safesweep/releases/download/v0.6.2/safesweep-v0.6.2-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "064f05cf57e0c7d4e3899417a0730fb179bc98d25733c008fc4da828c52d801a"
     end
   end
 
