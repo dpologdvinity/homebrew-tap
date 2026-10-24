@@ -6,6 +6,8 @@ set -euo pipefail
 repo=dpologdvinity/safesweep
 json=$(gh api "repos/$repo/releases/latest")
 tag=$(jq -r .tag_name <<<"$json")
+# never write a formula from a malformed tag (an empty or odd name once reached a release)
+[[ $tag =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]] || { echo "refusing tag '$tag': not vMAJOR.MINOR.PATCH" >&2; exit 1; }
 
 asset() { # $1 = target triple; prints "url sha256"
   local name="safesweep-$tag-$1.tar.gz" sha
