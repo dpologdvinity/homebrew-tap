@@ -2,28 +2,28 @@
 class Whoisport < Formula
   desc "Show what is listening on a TCP or UDP port, and optionally kill it"
   homepage "https://github.com/dpologdvinity/whoisport"
-  version "0.5.5"
+  version "0.5.6"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/dpologdvinity/whoisport/releases/download/v0.5.5/whoisport-v0.5.5-aarch64-apple-darwin.tar.gz"
-      sha256 "2bf37f0ac2c457537ee7f5e3abc2efc19d25e07a86e89543f22fa170ba69e86e"
+      url "https://github.com/dpologdvinity/whoisport/releases/download/v0.5.6/whoisport-v0.5.6-aarch64-apple-darwin.tar.gz"
+      sha256 "b4a33357be05d8583daa023420a841b2ca0aecebcb46db96982aeef392a38a7e"
     end
     on_intel do
-      url "https://github.com/dpologdvinity/whoisport/releases/download/v0.5.5/whoisport-v0.5.5-x86_64-apple-darwin.tar.gz"
-      sha256 "6efeb71967b54980b7c986863c47f00541c6bfeb2e656835a5ce0c20b6684ad7"
+      url "https://github.com/dpologdvinity/whoisport/releases/download/v0.5.6/whoisport-v0.5.6-x86_64-apple-darwin.tar.gz"
+      sha256 "fa8da507de6a2518c3566bf9fb283c6fa63949a2f6c0d4a549e75de99629b49f"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/dpologdvinity/whoisport/releases/download/v0.5.5/whoisport-v0.5.5-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "3a9835be7166d247d13c6cfcb692a1f43652cacc7c711cee7793a1b7d88a6b9e"
+      url "https://github.com/dpologdvinity/whoisport/releases/download/v0.5.6/whoisport-v0.5.6-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "652988de4c750652b5169393deadbda9808e984ce43ba629879e4257cd35c564"
     end
     on_intel do
-      url "https://github.com/dpologdvinity/whoisport/releases/download/v0.5.5/whoisport-v0.5.5-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "58c71b370d8800e642ae06d8a52d140a6079cb1eeaeb4d558401656c647d0671"
+      url "https://github.com/dpologdvinity/whoisport/releases/download/v0.5.6/whoisport-v0.5.6-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "d74d518473b2535ac8530db19f0a73a512e10168c3cfba423dbc8fddd2bec357"
     end
   end
 
