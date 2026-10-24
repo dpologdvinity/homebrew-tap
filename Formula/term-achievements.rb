@@ -5,21 +5,21 @@
 class TermAchievements < Formula
   desc "Xbox-style achievements for your shell"
   homepage "https://github.com/dpologdvinity/term-achievements"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dpologdvinity/term-achievements/releases/download/v0.1.3/term-achievements_0.1.3_darwin_amd64.tar.gz"
-      sha256 "7c06c05235f90913b5a12e2c890bff36e9d7d518674fe94465c1d8d89a2dac5f"
+      url "https://github.com/dpologdvinity/term-achievements/releases/download/v0.1.4/term-achievements_0.1.4_darwin_amd64.tar.gz"
+      sha256 "af225290df96444f105902eb8be94d46d4fc4fadb1e75855b8c883af7178e900"
 
       define_method(:install) do
         bin.install "term-achievements"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dpologdvinity/term-achievements/releases/download/v0.1.3/term-achievements_0.1.3_darwin_arm64.tar.gz"
-      sha256 "2ef90f0d465092ff6f2f34dd2bb723f2772150c5514fba0c65621c58a96686ea"
+      url "https://github.com/dpologdvinity/term-achievements/releases/download/v0.1.4/term-achievements_0.1.4_darwin_arm64.tar.gz"
+      sha256 "714fdf53db11fe05a1a6057ee398f5a1112adfc2b970a6617ed4b3ce5969db38"
 
       define_method(:install) do
         bin.install "term-achievements"
@@ -29,15 +29,15 @@ class TermAchievements < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dpologdvinity/term-achievements/releases/download/v0.1.3/term-achievements_0.1.3_linux_amd64.tar.gz"
-      sha256 "ef93f9b92e7f5097a8e711d09947fc75b02b406c0c464a6a1a77516f206093b8"
+      url "https://github.com/dpologdvinity/term-achievements/releases/download/v0.1.4/term-achievements_0.1.4_linux_amd64.tar.gz"
+      sha256 "f443f50fe2c7021f8abd72ac1d871a1a0465099fde63bc597a6a7939ceb75c2e"
       define_method(:install) do
         bin.install "term-achievements"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dpologdvinity/term-achievements/releases/download/v0.1.3/term-achievements_0.1.3_linux_arm64.tar.gz"
-      sha256 "06797899c06064f0a9f0b6272d32140aa15de1d2a4ee647a742f434ffa63f2d1"
+      url "https://github.com/dpologdvinity/term-achievements/releases/download/v0.1.4/term-achievements_0.1.4_linux_arm64.tar.gz"
+      sha256 "d66d1703a6a8000d1478eaf659c2f2b5764d24cfe2b17f9b4e59654846807837"
       define_method(:install) do
         bin.install "term-achievements"
       end
