@@ -1,25 +1,25 @@
 class Undo < Formula
   desc "Ctrl-Z for your terminal and your AI agent"
   homepage "https://github.com/dpologdvinity/undo"
-  version "0.1.1"
+  version "0.1.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/dpologdvinity/undo/releases/download/v0.1.1/undo-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "275025f6a8f7c914cca4150269499875290b29ef2e77a9439fd78565212f0047"
+      url "https://github.com/dpologdvinity/undo/releases/download/v0.1.2/undo-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "633b28c5d9a2d7474dc990841d750ad4b5ed2cb2c41e53b059e101db83181f84"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dpologdvinity/undo/releases/download/v0.1.1/undo-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "419e76774e9f845745f79e8cc2d209c44d5f4fc18e29b4a1571e186cd6155cb3"
+      url "https://github.com/dpologdvinity/undo/releases/download/v0.1.2/undo-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "f73e8f283130632b7cd4f6112c3a0421ff23678ed28a3a70774bb92e670f00f7"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/dpologdvinity/undo/releases/download/v0.1.1/undo-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "aa416c961660749fbeceffabb7f500f9314f272cf8c641fe8a4e18a71c1b7e2d"
+      url "https://github.com/dpologdvinity/undo/releases/download/v0.1.2/undo-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "ea94c44f7d679f3050b17313cf828c11634608c2e63b4996495f988ef7e01922"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dpologdvinity/undo/releases/download/v0.1.1/undo-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "ae1389205117e217a545224b0a823d5c0133da403273b6ea1c74a6ea19c301d0"
+      url "https://github.com/dpologdvinity/undo/releases/download/v0.1.2/undo-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "d983f17cbfcbc9da9419e66d2f41c072a526dea5c30164c4ef9cc8dca1d40a0e"
     end
   end
   license "MIT"
