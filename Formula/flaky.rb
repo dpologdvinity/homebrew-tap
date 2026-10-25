@@ -2,28 +2,28 @@
 class Flaky < Formula
   desc "Offline CLI to rank intermittent test failures and bisect their introduction"
   homepage "https://github.com/dpologdvinity/flaky"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/dpologdvinity/flaky/releases/download/v0.1.1/flaky_0.1.1_darwin_arm64.tar.gz"
-      sha256 "5bc448cf9f36839466910de6cda1c08a293fbd017b0aa118d72110d4ac02ee8f"
+      url "https://github.com/dpologdvinity/flaky/releases/download/v0.1.2/flaky_0.1.2_darwin_arm64.tar.gz"
+      sha256 "85cbaae46ae61b7106e1db2ba51d9ce77d0d57d5a957b85df17a7de66841e721"
     end
     on_intel do
-      url "https://github.com/dpologdvinity/flaky/releases/download/v0.1.1/flaky_0.1.1_darwin_amd64.tar.gz"
-      sha256 "32abaa25a3f559243fbb358061bff42df7acb4ad77be2794b3ce8db2690e85b5"
+      url "https://github.com/dpologdvinity/flaky/releases/download/v0.1.2/flaky_0.1.2_darwin_amd64.tar.gz"
+      sha256 "e6817689f453c6fa16634b58b47b88fcce664a25a4f7352271309767b2aa4124"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/dpologdvinity/flaky/releases/download/v0.1.1/flaky_0.1.1_linux_arm64.tar.gz"
-      sha256 "2227833e547a803546f634031bfc251e3ac8f12247769c1a643cb0c9a12bf814"
+      url "https://github.com/dpologdvinity/flaky/releases/download/v0.1.2/flaky_0.1.2_linux_arm64.tar.gz"
+      sha256 "b6feee9bc32f033421797b5d8135424f27d06fa7f4a0710d83073b224aa50d3d"
     end
     on_intel do
-      url "https://github.com/dpologdvinity/flaky/releases/download/v0.1.1/flaky_0.1.1_linux_amd64.tar.gz"
-      sha256 "3f9c2dc44286cc0ea44ef978a317bfa19457d141ca14976b18774bf1e55f3ffd"
+      url "https://github.com/dpologdvinity/flaky/releases/download/v0.1.2/flaky_0.1.2_linux_amd64.tar.gz"
+      sha256 "376e24093178fe0d54f560401606c7789c9894115ef782720b21a24d0988eabf"
     end
   end
 
