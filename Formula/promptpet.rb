@@ -2,28 +2,28 @@
 class Promptpet < Formula
   desc "A tiny pet that lives in your shell prompt"
   homepage "https://github.com/dpologdvinity/promptpet"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/dpologdvinity/promptpet/releases/download/v0.3.0/promptpet_0.3.0_darwin_arm64.tar.gz"
-      sha256 "007511a461be0e524a49c818c9479ea73a960b8cefd9d4fb215e8b06dfde091f"
+      url "https://github.com/dpologdvinity/promptpet/releases/download/v0.3.1/promptpet_0.3.1_darwin_arm64.tar.gz"
+      sha256 "672f0e65512469f7944a0ae924472a085758c041ecdadd5bdd3393264d18ff6d"
     end
     on_intel do
-      url "https://github.com/dpologdvinity/promptpet/releases/download/v0.3.0/promptpet_0.3.0_darwin_amd64.tar.gz"
-      sha256 "f1df6d2bf254e4043defc35b3c251de0e1ad4b899b873502535be45855c282c1"
+      url "https://github.com/dpologdvinity/promptpet/releases/download/v0.3.1/promptpet_0.3.1_darwin_amd64.tar.gz"
+      sha256 "73c1faec89fb5b2955e7d8e3abfb02e3d4abce19db0cbe4a8b81a79197834eee"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/dpologdvinity/promptpet/releases/download/v0.3.0/promptpet_0.3.0_linux_arm64.tar.gz"
-      sha256 "e2463fe67feaf7d880936e3fda64c9a04d8d0445ccfb760a3ebd0655b486218b"
+      url "https://github.com/dpologdvinity/promptpet/releases/download/v0.3.1/promptpet_0.3.1_linux_arm64.tar.gz"
+      sha256 "1af5e653380270b6b61ed01ea6b0b1664d043f3842d93411495d808c46ab821d"
     end
     on_intel do
-      url "https://github.com/dpologdvinity/promptpet/releases/download/v0.3.0/promptpet_0.3.0_linux_amd64.tar.gz"
-      sha256 "c3b9117088bdb4c51926777e39c016340a21fe742465717bdb8772e0e2c2e0ab"
+      url "https://github.com/dpologdvinity/promptpet/releases/download/v0.3.1/promptpet_0.3.1_linux_amd64.tar.gz"
+      sha256 "a4138a44cbc26864aa4259cb864bd7ce00666b50b980304af6cf85d2f59d6a08"
     end
   end
 
