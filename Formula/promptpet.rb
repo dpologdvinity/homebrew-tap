@@ -2,37 +2,38 @@
 class Promptpet < Formula
   desc "A tiny pet that lives in your shell prompt"
   homepage "https://github.com/dpologdvinity/promptpet"
-  version "0.5.0"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/dpologdvinity/promptpet/releases/download/v0.5.0/promptpet_0.5.0_darwin_arm64.tar.gz"
-      sha256 "1174dc3a7e312f1ad187a349b04b6f3866b2b8028a7ef77559d170bd1904352d"
+      url "https://github.com/dpologdvinity/promptpet/releases/download/v0.6.0/promptpet_0.6.0_darwin_arm64.tar.gz"
+      sha256 "d97a84ee66479ee33838085b520e6699baf4bb5cae69b877282deebcdef72b96"
     end
     on_intel do
-      url "https://github.com/dpologdvinity/promptpet/releases/download/v0.5.0/promptpet_0.5.0_darwin_amd64.tar.gz"
-      sha256 "e1576f97cd22ad4c739fe1b337de4a248752f4b39fe6b6a73430c06f937d9118"
+      url "https://github.com/dpologdvinity/promptpet/releases/download/v0.6.0/promptpet_0.6.0_darwin_amd64.tar.gz"
+      sha256 "79aec1aa77701cb7669aebe040e4b5b7ce9e724a5752b93ecada5ea2a3512ef9"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/dpologdvinity/promptpet/releases/download/v0.5.0/promptpet_0.5.0_linux_arm64.tar.gz"
-      sha256 "4103597f305567d60a839c7b72127d999470f0f9312be799be5c639e0b18027e"
+      url "https://github.com/dpologdvinity/promptpet/releases/download/v0.6.0/promptpet_0.6.0_linux_arm64.tar.gz"
+      sha256 "064375de01446aa68396ef43f677e3416e75f1b4ef630a358e5471fda8caa74b"
     end
     on_intel do
-      url "https://github.com/dpologdvinity/promptpet/releases/download/v0.5.0/promptpet_0.5.0_linux_amd64.tar.gz"
-      sha256 "9269124a2ba49e4cda0e5c0481add49dc73fd9bf3b8bd9e454b441ee8c48bd1a"
+      url "https://github.com/dpologdvinity/promptpet/releases/download/v0.6.0/promptpet_0.6.0_linux_amd64.tar.gz"
+      sha256 "f7a2f3b574a4473fb8b2cbc0e9214909a4c3e815b88dce6d16992ff3c0de14a4"
     end
   end
 
   def install
-    bin.install "promptpet"
+    bin.install "promptpet", "promptpet-gui"
     generate_completions_from_executable(bin/"promptpet", "completion")
   end
 
   test do
     assert_match "promptpet #{version}", shell_output("#{bin}/promptpet --version")
+    assert_match "promptpet-gui #{version}", shell_output("#{bin}/promptpet-gui --version")
   end
 end
